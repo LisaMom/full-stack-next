@@ -1,31 +1,49 @@
 
-type ProductType = {
+export type ProductType = {
     title: string;
     description: string;
     price: number;
+    originalPrice: number;
     imageUrl: string;
+    isPopular: boolean;
 };
 
 export const productList: ProductType[] = [
     {
-        title: "Product 1",
-        description: "This is the description for Product 1.",
-        price: 19.99,
-        imageUrl: "https://i.pinimg.com/736x/e6/63/5b/e6635be89fd569e0f9259eb705b24932.jpg"
+        title: "Bacon Onion Pizza Focaccia",
+        description: "ភីហ្សារសជាតិបេកុន និងខ្ទឹមបារាំង 1 ថ្នាំ",
+        price: 3.44,
+        originalPrice: 4.30,
+        imageUrl: "https://i.pinimg.com/1200x/8a/64/ea/8a64eabc15c62a85d2de85e6647baf61.jpg",
+        isPopular: false
     },
     {
-        title: "Product 2",
-        description: "This is the description for Product 2.",
-        price: 29.99,
-        imageUrl: "https://i.pinimg.com/736x/d6/ea/a7/d6eaa78d9717da9cde9f8d6a88fc6fce.jpg"
+        title: "Tuna Melt Sandwich",
+        description:
+            "Mix of tuna cream cheese onions. We Recommend adding: Jalapeno...",
+        price: 3.92,
+        originalPrice: 4.90,
+        imageUrl: "https://i.pinimg.com/736x/69/c7/e6/69c7e62cd9602fed570495991ea47deb.jpg",
+        isPopular: true
     },
     {
-        title: "Product 3",
-        description: "This is the description for Product 3.",
-        price: 39.99,
-        imageUrl: "https://i.pinimg.com/736x/7e/ff/aa/7effaa9072ccde62da98e21d9afbeab1.jpg"
+        title: "Cream Cheese Basil Tomatoes Sandwich",
+        description:
+            "Try Coppa as extra addon or any meat of your choice. No...",
+        price: 3.68,
+        originalPrice: 4.60,
+        imageUrl: "https://i.pinimg.com/1200x/1c/33/de/1c33dee581fdbd4196f263c4a261daf9.jpg",
+        isPopular: true
     },
+    {
+        title: "Smoked Chicken Mix",
+        description:
+            "Chicken deli mixed with grainy mustard mayo and onions....",
+        price: 3.76,
+        originalPrice: 4.70,
+        imageUrl: "https://i.pinimg.com/736x/41/cd/05/41cd0503aeab9a80fc8dc5b8d2482981.jpg",
+        isPopular: true
+    }
 ];
 
-export default ProductType;
-
+export default productList;

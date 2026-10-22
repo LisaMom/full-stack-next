@@ -1,0 +1,15 @@
+
+import ProductCardComponents from "./ProductCardComponents";
+export function ProductCardListComponent() {
+  return (
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <ProductCardComponents />
+        <ProductCardComponents />
+        <ProductCardComponents />
+        <ProductCardComponents />
+        <ProductCardComponents />
+        <ProductCardComponents />
+        <ProductCardComponents />
+    </div>
+  );
+}
